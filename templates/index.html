@@ -1,12 +1,62 @@
+<!--  index.html  -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Railway</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limpieza – Catálogo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/pagina1.css') }}">
+
+
 </head>
+
 <body>
-    <h1>Hola, soy una app levantada en Railway :)</h1>
-    <h5>¿Cómo estás?</h5>
+    <!-- Encabezado -->
+    <header class="header">
+        <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="/lacteos">Lácteos</a></li>
+            <li><a href="/carnes">Carnes</a></li>
+            <li><a href="/bebidas">Bebidas</a></li>
+            <li><a href="/limpieza" class="active">Limpieza</a></li>
+        </ul>
+    </nav>
+    <h1 class="logo">Limpieza</h1>
+    <p class="slogan">Limpieza impecable, frescura que se nota</p>
+    </header>
+
+    <!-- Tipo de productos -->
+    <section class="product-type">
+        <h2>De casa en casa, limpieza con alma</h2>
+        <p>Tan limpia que casi brilla, pero no te preocupes, ya está lista para sorprenderte</p>
+    </section>
+
+    <!-- Lista de productos -->
+    <main class="product-list">
+        <article class="product-card">
+            <img src="{{ url_for('static', filename='images/detergente.png') }}" alt="Yogur natural 500 g" />
+            <h3>Detergente líquido 1L</h3>
+            <p class="price">$ 2.99</p>
+        </article>
+
+        <article class="product-card">
+            <img src="{{ url_for('static', filename='images/jabon.png') }}" alt="Queso fresco 250 g" />
+            <h3>Jabón para ropa 200g</h3>
+            <p class="price">$ 0.83</p>
+        </article>
+
+        <article class="product-card">
+            <img src="{{ url_for('static', filename='images/repelente-contra-mosquitos.png') }}" alt="Leche entera 1 L" />
+            <h3>Repelente de insectos 120ml</h3>
+            <p class="price">$ 2.99</p>
+        </article>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2025&nbsp;Limpieza&nbsp;S.A. – Todos los derechos reservados.</p>
+    </footer>
 </body>
+
 </html>
