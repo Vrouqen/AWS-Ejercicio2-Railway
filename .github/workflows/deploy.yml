@@ -3,7 +3,7 @@ name: Deploy to Railway
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   deploy:
@@ -13,11 +13,11 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v3
 
-      - name: Instalar Railway CLI
-        run: npm install -g railway
+      - name: Instalar Railway CLI moderna
+        run: npm install -g @railway/cli
 
       - name: Autenticarse en Railway
         run: railway login --token ${{ secrets.RAILWAY_TOKEN }}
 
-      - name: Deploy a Railway
+      - name: Desplegar a Railway
         run: railway up
