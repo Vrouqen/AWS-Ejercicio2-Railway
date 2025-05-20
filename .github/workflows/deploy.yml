@@ -19,4 +19,5 @@ jobs:
       - name: Desplegar a Railway
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: railway up --project ${{ secrets.RAILWAY_PROJECT_ID }}
+        run: railway up -- --project ${{ secrets.RAILWAY_PROJECT_ID }}
+
