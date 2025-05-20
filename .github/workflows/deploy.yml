@@ -1,5 +1,4 @@
 name: Deploy to Railway
-
 on:
   push:
     branches:
@@ -16,7 +15,7 @@ jobs:
       - name: Instalar Railway CLI moderna
         run: npm install -g @railway/cli
 
-      - name: Desplegar a Railway
+      - name: Desplegar a Railway manualmente
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
         run: railway up
