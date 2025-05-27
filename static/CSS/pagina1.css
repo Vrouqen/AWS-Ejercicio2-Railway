@@ -9,7 +9,7 @@ body {
 
 /* Encabezado */
 .header {
-  background-color: #626F47;
+  background-color: #47606f;
   color: white;
   padding: 20px;
   text-align: center;
@@ -29,7 +29,7 @@ body {
 .product-type {
   text-align: center;
   padding: 30px 15px 10px 15px;
-  background-color: #b2da81;
+  background-color: #819cda;
 }
 
 .product-type h2 {
@@ -88,7 +88,7 @@ body {
 .footer {
   text-align: center;
   padding: 15px;
-  background-color: #6fa04f;
+  background-color: #4f8aa0;
   color: white;
   font-size: 14px;
 }
@@ -121,7 +121,7 @@ body {
 }
 
 .nav-list a.active {
-    background-color: #2a5814; /* rojo oscuro o el color de marca */
+    background-color: #144658; /* rojo oscuro o el color de marca */
     color: #fff;
 }
 
